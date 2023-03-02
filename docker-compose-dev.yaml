@@ -1,6 +1,7 @@
 version: '3'
 services:
   node-app:
+    image: docker-react:kumarso
     build: 
       context: .
       dockerfile: Dockerfile.dev
