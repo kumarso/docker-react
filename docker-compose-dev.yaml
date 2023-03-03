@@ -4,7 +4,7 @@ services:
     image: docker-react:kumarso
     build: 
       context: .
-      dockerfile: Dockerfile.dev
+      dockerfile: Dockerfile
     volumes:
       - /app/node_modules
       - .:/app
