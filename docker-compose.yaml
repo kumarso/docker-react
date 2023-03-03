@@ -10,16 +10,6 @@ services:
       - /app/node_modules
       - .:/app
 
-  node-test:
-    build: 
-      context: .
-      dockerfile: Dockerfile.dev
-    volumes:
-      - /app/node_modules
-      - .:/app
-      #override a entry command
-    command: ["npm", "run", "test"]
-
 
 
     
