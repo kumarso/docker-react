@@ -4,7 +4,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t kumarso/docker-react -f Dockerfile.dev .
+  - docker build -t kumarso/docker-react1 -f Dockerfile.dev .
 #  - docker-compose -f docker-compose-dev.yml up
 #  - docker-compose -f docker-compose-dev.yaml up --build
 #  - docker-compose -f docker-compose-dev.yml down
