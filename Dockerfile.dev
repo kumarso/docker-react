@@ -6,10 +6,3 @@ COPY package.json .
 RUN npm install
 COPY . .
 CMD ["npm", "run", "start"]
-
-FROM nginx
-EXPOSE 80
-# copy from different phase
-# /usr/share/ngnix/html by default servers the content in nginx
-COPY --from=builder /app/build /usr/share/nginx/html
-# default command of nginx image is start nginx so no need t0 start ngnix
