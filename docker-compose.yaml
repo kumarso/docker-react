@@ -1,8 +1,9 @@
 version: '3'
 services:
   node-app:
+    image: kumarso/docker-myreact
     build: 
       context: .
       dockerfile: Dockerfile
     ports:
-      - "80:80"
+      - "5000:80"
