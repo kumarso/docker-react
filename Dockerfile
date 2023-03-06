@@ -8,7 +8,7 @@ COPY . .
 RUN npm run build
 
 FROM nginx
-EXPOSE 80
+EXPOSE 5000
 # copy from different phase
 # /usr/share/ngnix/html by default servers the content in nginx
 COPY --from=builder /app/build /usr/share/nginx/html
